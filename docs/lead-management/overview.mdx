@@ -1,0 +1,132 @@
+---
+sidebar_position: 1
+---
+
+import FeatureCard from '@site/src/components/custom/FeatureCard';
+
+# Lead Management Overview
+
+Learn how to effectively manage and nurture your leads with Pino Ai CRM's powerful lead management features.
+
+## Key Features
+
+<div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6 tw-my-8">
+  <FeatureCard
+    title="Lead Capture"
+    description="Automatically capture leads from your website, forms, and social media."
+  />
+  <FeatureCard
+    title="Lead Scoring"
+    description="Prioritize leads based on their engagement and likelihood to convert."
+  />
+  <FeatureCard
+    title="Lead Nurturing"
+    description="Create automated workflows to nurture leads through your sales funnel."
+  />
+  <FeatureCard
+    title="Lead Analytics"
+    description="Track lead sources, conversion rates, and ROI with detailed analytics."
+  />
+</div>
+
+## Getting Started with Lead Management
+
+### Setting Up Lead Capture
+
+1. Configure your lead capture forms
+2. Set up web tracking
+3. Enable social media integration
+4. Configure email capture
+
+### Lead Qualification Process
+
+1. Define lead scoring criteria
+2. Set up automated lead scoring
+3. Configure lead assignment rules
+4. Set up notification rules
+
+### Lead Nurturing Workflows
+
+1. Create email sequences
+2. Set up trigger events
+3. Define follow-up tasks
+4. Configure automation rules
+
+## Best Practices
+
+### Lead Capture
+- Use multiple capture points
+- Optimize forms for conversion
+- Implement progressive profiling
+- Enable real-time notifications
+
+### Lead Scoring
+- Define clear scoring criteria
+- Regular score updates
+- Monitor scoring effectiveness
+- Adjust scoring rules as needed
+
+### Lead Nurturing
+- Segment your leads
+- Personalize communication
+- Track engagement
+- Regular follow-ups
+
+## Advanced Features
+
+### Custom Fields
+Learn how to create custom fields to track lead-specific information:
+
+```javascript
+// Example custom field configuration
+{
+  fieldName: "Industry",
+  type: "dropdown",
+  options: ["Retail", "Technology", "Healthcare", "Other"],
+  required: true
+}
+```
+
+### Automation Rules
+Set up powerful automation rules to streamline your lead management:
+
+```javascript
+// Example automation rule
+{
+  trigger: "FormSubmission",
+  conditions: [
+    { field: "Score", operator: ">=", value: 50 },
+    { field: "Industry", operator: "equals", value: "Technology" }
+  ],
+  actions: [
+    { type: "AssignTo", value: "TechTeam" },
+    { type: "SendEmail", template: "TechWelcome" }
+  ]
+}
+```
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Lead Not Captured**
+   - Check form configuration
+   - Verify tracking code
+   - Check integration settings
+
+2. **Scoring Not Updated**
+   - Verify scoring rules
+   - Check automation triggers
+   - Review system logs
+
+3. **Workflow Not Triggering**
+   - Check trigger conditions
+   - Verify action settings
+   - Review workflow logs
+
+## Next Steps
+
+1. [Set up your first lead capture form](./lead-capture)
+2. [Configure lead scoring](./lead-scoring)
+3. [Create nurturing workflows](./lead-nurturing)
+4. [Set up reporting](./lead-reporting)
